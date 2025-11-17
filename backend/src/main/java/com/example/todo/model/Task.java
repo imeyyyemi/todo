@@ -24,10 +24,7 @@ public class Task {
 
     // Constructor with parameters
     public Task(String title, String description, User user) {
-        this.title = title;
-        this.description = description;
-        this.completed = false;
-        this.user = user;
+
     }
 
     // Getters and Setters
