@@ -20,7 +20,9 @@ public class User {
 
     // Constructor with parameters
     public User(String email, String username, String password) {
-
+        this.email = email;
+        this.username = username;
+        this.password = password;
     }
 
     // Getters and Setters
