@@ -30,27 +30,10 @@ public class TaskController {
     @GetMapping
     public ResponseEntity<?> getAllTasks(@RequestHeader(value = "Authorization", required = false) String authHeader) {
         try {
-            if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-                return ResponseEntity.badRequest().body(Map.of("message", "Authorization header required"));
-            }
-
-            String token = authHeader.substring("Bearer ".length());
-            String username = extractUsernameFromToken(token);
-
-            User user = userRepo.findByUsername(username)
-                    .orElseThrow(() -> new RuntimeException("User not found"));
-
-            List<Task> userTasks = taskRepo.findByUser(user);
-            return ResponseEntity.ok(userTasks);
+            // TODO: Add authorization validation and task retrieval logic here
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(Map.of("message", "Error: " + e.getMessage()));
         }
-    }
-
-    @GetMapping("/{username}")
-    public List<Task> getTasks(@PathVariable String username) {
-        User user = userRepo.findByUsername(username).orElseThrow();
-        return taskRepo.findByUser(user);
     }
 
     @PostMapping
