@@ -1,0 +1,9 @@
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/TodoApplication.java
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/model/Task.java
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/config/WebConfig.java
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/repository/UserRepository.java
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/model/User.java
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/controller/AuthController.java
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/config/SecurityConfig.java
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/controller/TaskController.java
+/Users/imeylonganilla/Desktop/todo/backend/src/main/java/com/example/todo/repository/TaskRepository.java
